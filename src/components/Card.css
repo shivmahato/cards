@@ -1,0 +1,37 @@
+
+.card {
+  border: 1px solid #ddd; 
+  border-radius: 12px;
+  padding: 20px;
+  margin: 10px;
+  width: 220px;
+  background: #ecedc7; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 4px 8px rgba(255, 64, 129, 0.2);
+}
+
+button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+@keyframes pop {
+  0% { transform: scale(0.9); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.card {
+  animation: pop 0.3s ease-in-out;
+}
